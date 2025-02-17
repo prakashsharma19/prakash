@@ -300,6 +300,7 @@
                     <li><strong>WordPress Developer:</strong> IIIT Allahabad</li>
                     <li><strong>Marketing Management:</strong> IIM Bangalore</li>
                     <li><strong>Management Information Systems:</strong> IIT Kharagpur</li>
+<li><strong>Digital Transformation: Theory and Applications:</strong> IIM Ahemdabad</li>
                     <li><strong>English Proficiency (CEFR B2):</strong> Certified</li>
                 </ul>
                 <p style="font-style: italic;">(All certifications can be verified through LinkedIn profile)</p>
