@@ -33,6 +33,50 @@
             margin: 10px auto;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.hamburger-btn {
+    font-size: 24px;
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+.menu-content a {
+    display: block;
+    padding: 10px;
+    color: #003366;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-content a:last-child {
+    border-bottom: none;
+}
+
+.menu-content a:hover {
+    background: #f0f8ff;
+}
 
         .header {
             display: flex;
@@ -229,6 +273,17 @@
                 <h2>Web Developer</h2>
                 <p><strong>Email:</strong> <a href="mailto:contact@cpsharma.com">contact@cpsharma.com</a></p>
                 <p><strong>Location:</strong> Prayagraj, India</p>
+<div class="hamburger-menu">
+    <button class="hamburger-btn" onclick="toggleMenu()">☰</button>
+    <div class="menu-content" id="menu">
+        <a href="#">Services</a>
+        <a href="#">OJS Service</a>
+        <a href="#">Website Development</a>
+        <a href="#">SEO</a>
+        <a href="#">SMM</a>
+        <a href="#">Google & Meta Ads</a>
+    </div>
+</div>
 
                 <!-- Social Media Section -->
                 <div class="social-media">
@@ -347,7 +402,22 @@
                     custom-font-weight="500" custom-width="200px" async defer>
             </script>
         </div>
-   
+   <script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menu");
+    var button = document.querySelector(".hamburger-btn");
+    if (menu.style.display === "block" && !menu.contains(event.target) && !button.contains(event.target)) {
+        menu.style.display = "none";
+    }
+});
+</script>
+
                     <button type="submit">Submit</button>
                 </form>
             </section>
