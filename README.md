@@ -273,6 +273,7 @@
                 <h2>Web Developer</h2>
                 <p><strong>Email:</strong> <a href="mailto:contact@cpsharma.com">contact@cpsharma.com</a></p>
                 <p><strong>Location:</strong> Prayagraj, India</p>
+
 <div class="hamburger-menu">
     <button class="hamburger-btn" onclick="toggleMenu()">☰</button>
     <div class="menu-content" id="menu">
