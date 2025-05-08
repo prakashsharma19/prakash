@@ -1,0 +1,265 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFFCF2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: #003366;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav__bar a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav__logo {
+  background-color: #fff;
+  color: #003366;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.nav__menu__btn {
+  display: none;
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #D5534D;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #b6413d;
+}
+
+.btn__large {
+  margin-left: auto;
+}
+
+/* Sections */
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.section__header {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+/* Header Section */
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.header__image img {
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.header__content h1 {
+  font-size: 2.5rem;
+  color: #003366;
+}
+
+.header__btn {
+  margin-top: 1rem;
+}
+
+/* About Section */
+.about__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.about__content ul {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* Services */
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service__card {
+  background: white;
+  border: 1px solid #eee;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.service__card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service__card span i {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Portfolio */
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.portfolio__card img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.portfolio__banner {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.portfolio__banner__card span i {
+  font-size: 2rem;
+  color: #003366;
+}
+
+/* Contact Section */
+.contact__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.contact__socials a {
+  font-size: 1.5rem;
+  color: #003366;
+  transition: transform 0.3s ease;
+}
+
+.contact__socials a:hover {
+  transform: scale(1.2);
+  color: #D5534D;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #002244;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav__menu__btn {
+    display: block;
+  }
+
+  .header__container,
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio__banner {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
