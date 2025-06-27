@@ -7,194 +7,7 @@
     <link rel="icon" href="https://github.com/prakashsharma19/prakash/blob/main/mydp-removebg-preview.png?raw=true" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* You can also move this to styles.css */
-
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #FFFCF2;
-        color: #333;
-        margin: 0;
-      }
-
-      nav {
-        background-color: #003366;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        flex-wrap: wrap;
-      }
-
-      .nav__bar a {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-      }
-
-      .nav__logo {
-        background: white;
-        color: #003366;
-        padding: 0.2rem 0.5rem;
-        border-radius: 5px;
-        margin-right: 0.5rem;
-      }
-
-      .nav__links {
-        display: flex;
-        gap: 1.5rem;
-        list-style: none;
-      }
-
-      .nav__links a {
-        text-decoration: none;
-        color: white;
-        font-weight: 500;
-      }
-
-      .btn {
-        background-color: #004080;
-        color: white;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        text-decoration: none;
-      }
-
-      .btn:hover {
-        background-color: #003366;
-      }
-
-      .section__container {
-        max-width: 1200px;
-        margin: auto;
-        padding: 4rem 2rem;
-      }
-
-      .section__header {
-        font-size: 2rem;
-        color: #003366;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-
-      .header__container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-      }
-
-      .header__image img {
-        width: 150px;
-        border-radius: 12px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      }
-
-      .header__content h1 {
-        font-size: 2rem;
-        color: #003366;
-      }
-
-      .section__description {
-        margin-top: 1rem;
-        font-size: 1rem;
-      }
-
-      .about__content ul {
-        list-style: disc;
-        padding-left: 1.5rem;
-      }
-
-      .service__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1.5rem;
-        margin-top: 2rem;
-      }
-
-      .service__card {
-        background: #fff;
-        border: 1px solid #ddd;
-        padding: 1.5rem;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-      }
-
-      .service__card:hover {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      }
-
-      .service__card i {
-        font-size: 2rem;
-        color: #003366;
-        margin-bottom: 1rem;
-      }
-
-      .portfolio__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-
-      .portfolio__grid img {
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      }
-
-      .contact__socials {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin: 1.5rem 0;
-      }
-
-      .contact__socials a {
-        font-size: 1.5rem;
-        color: #003366;
-      }
-
-      form {
-        max-width: 600px;
-        margin: auto;
-      }
-
-      form input,
-      form textarea {
-        width: 100%;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-      }
-
-      form button {
-        background-color: #004080;
-        color: white;
-        padding: 0.75rem 1.5rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      form button:hover {
-        background-color: #003366;
-      }
-
-      .footer {
-        text-align: center;
-        padding: 1rem;
-        background-color: #003366;
-        color: white;
-      }
-    </style>
+    
   </head>
 
   <body>
@@ -255,10 +68,10 @@
       <h2 class="section__header">My Portfolio</h2>
       <p class="section__description">Samples of my work are available upon request or through my LinkedIn.</p>
       <div class="portfolio__grid">
-        <img src="assets/project-1.jpg" alt="Project 1" />
-        <img src="assets/project-2.jpg" alt="Project 2" />
-        <img src="assets/project-3.jpg" alt="Project 3" />
-        <img src="assets/project-4.jpg" alt="Project 4" />
+        <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1" />
+        <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2" />
+        <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3" />
+        <img src="https://via.placeholder.com/300x200?text=Project+4" alt="Project 4" />
       </div>
     </section>
 
@@ -276,17 +89,7 @@
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
-      </form>
-      <div class="booking-button">
-        <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
-          user-profile="https://topmate.io/embed/profile/prakash_sharma?theme=D5534D"
-          btn-style='{"backgroundColor":"#003366","color":"#fff","border":"1px solid #003366"}'
-          embed-version="v1" button-text="Let's Connect 1:1"
-          position-right="30px" position-bottom="30px"
-          custom-padding="0px" custom-font-size="16px"
-          custom-font-weight="500" custom-width="200px" async defer>
-        </script>
-      </div>
+      </form>
     </section>
 
     <footer class="footer">
